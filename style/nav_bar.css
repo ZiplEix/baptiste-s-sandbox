@@ -32,6 +32,7 @@ ul.nav_links {
 }
 
 .nav_links li a:hover {
+    color: #3586ff;
     color: #0088a9;
 }
 
