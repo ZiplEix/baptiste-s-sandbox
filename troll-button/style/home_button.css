@@ -11,4 +11,10 @@
     /* box-shadow: 0 0 10px #000; */
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
