@@ -15,3 +15,30 @@ body {
       Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background: #333;
 }
+
+.blob {
+    color: whitesmoke;
+    position: absolute;
+    left: 60vh;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+    padding: 100px 20vw;
+    overflow: hidden;
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+.blob-motion {
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 0;
+}
+
+.blob-content {
+    z-index: 1;
+}

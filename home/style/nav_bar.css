@@ -8,6 +8,7 @@ li, a.nav_bar_links, button.cta {
 
 header {
     background-color: #24252A;
+    /* background-color: #474a54; */
     display: flex;
     justify-content: space-between;
     align-items: center;
