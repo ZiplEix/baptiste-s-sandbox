@@ -1,7 +1,7 @@
 
-let button = document.getElementById('home-button');
+let homeButton = document.getElementById('home-button');
 
-button.addEventListener('click', function() {
+homeButton.addEventListener('click', function() {
     window.location.href = "/";
     }
 );

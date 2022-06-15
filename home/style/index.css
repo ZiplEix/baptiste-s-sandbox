@@ -20,6 +20,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 72vh;
+  flex-direction: row;
+  min-height: 72vh;
+  color: white;
+}
+
+.trait {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }

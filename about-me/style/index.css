@@ -10,6 +10,6 @@ body {
     background: #333;
 }
 
-#temp {
-  color: whitesmoke;
+.main {
+  min-height: 72vh;
 }

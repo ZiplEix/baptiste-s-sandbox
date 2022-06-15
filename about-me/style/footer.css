@@ -1,8 +1,6 @@
 
 .footer {
     display: flex;
-    justify-self: flex-end;
-    align-items: flex-end;
 }
 
 footer {
