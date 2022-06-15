@@ -10,23 +10,157 @@
     -ms-user-select: none;
 }
 
+div {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
+  display: block;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",  Helvetica,
       Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background: #333;
 }
 
+.container {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 80rem;
+  padding-inline: 1rem;
+}
+
 .main {
   display: flex;
-  justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
-  flex-direction: row;
-  min-height: 72vh;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+}
+.left > :not(style) ~ :not(style) {
+  margin-top: 1.25rem;
+  margin-inline: 0;
+  margin-bottom: 0;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 1.1;
   color: white;
 }
 
-.trait {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+.main-title {
+  position: relative;
+}
+
+.sub-title {
+  color: rgba(0,136,169,1);
+}
+
+.description {
+  margin-top: 1.35rem;
+}
+
+.me-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-me {
+  display: inline-flex;
+  appearance: none;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  line-height: 1.2;
+  border-radius: 9999px;
+  font-weight: 400;
+  transition-property: background-color, color, border-color, box-shadow, fill, stroke, opacity, transform;
+  transition-duration: 200ms;
+  height: 3rem;
+  min-width: 3rem;
+  font-size: 1.125rem;
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 1.5rem;
+  background: rgba(0,136,169,1);
+  color: white;
+  border: none;
+}
+
+.right {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex: 1 1 0%;
+  position: relative;
+  width: 100%;
+}
+
+.blob {
+  width: 100%;
+  height: 150%;
+  display: inline-block;
+  line-height: 1em;
+  flex-shrink: 0;
+  color: rgba(0,136,169,1);
+  vertical-align: middle;
+  fill: none;
+  position: absolute;
+  top: -20%;
+  left: 0px;
+  z-index: -1;
+}
+
+@media screen and (min-width: 576px) {
+  .title {
+    font-size: 2.25rem;
+  }
+  .me-button {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    margin-top: 2.5rem;
+  }
+  .main {
+    flex-direction: row;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .main > :not(style) ~ :not(style) {
+    margin-inline-start: 2.5rem;
+}
+  .left > :not(style) ~ :not(style) {
+    margin-top: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 3.75rem;
+  }
 }
