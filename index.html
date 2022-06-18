@@ -9,23 +9,25 @@
     <link rel="stylesheet" href="home/style/nav_bar.css">
     <link rel="stylesheet" href="home/style/footer.css">
     <link rel="stylesheet" href="home/style/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
 
-    <header>
-        <a class="nav_bar_links" href="/"><strong>BAPTISTE'S SANDBOX</strong></a>
-        <nav>
-            <ul class="nav_links">
-                <li><a class="nav_bar_links" href="/personal-project/">Personal projects</a></li>
-                <li><a class="nav_bar_links" href="#">School Projects</a></li>
-                <li><a class="nav_bar_links" href="./about-me/">About me</a></li>
+    <nav class="navbar nav-container">
+        <a class="logo" href="/"><strong>BAPTISTE'S SANDBOX</strong></a>
+        <input type="checkbox" id="toggler">
+        <label for="toggler"><i class="ri-menu-line"></i></label>
+        <div class="menu">
+            <ul class="list">
+                <li><a href="#">personal-project</a></li>
+                <li><a href="#">School projects</a></li>
+                <li><a href="#">About me</a></li>
             </ul>
-        </nav>
-        <a class="cta" href="#"><button class="cta">Contact</button></a>
-    </header>
+        </div>
+    </nav>
 
     <div class="container">
         <div class="main">
